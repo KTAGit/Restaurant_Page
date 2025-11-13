@@ -1,1 +1,3 @@
-console.log("test")
+import { pageLoad } from "./pageLoad.js";
+
+pageLoad()
