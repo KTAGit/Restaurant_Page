@@ -6,7 +6,7 @@ body {
 #content {
     justify-self: center;
     max-width: 1517px;
-    height: 60%;
+    height: 80%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 0.7fr));
     align-items: center;
@@ -15,10 +15,10 @@ body {
 
 .food-image {
     margin-bottom: 0px;
-    margin-right: 150px;
-    display: block;
-    height: 700px;
-    width: 700px;
+    margin-right: 0px;
+    object-fit: cover;
+    height: 100%;
+    width: 90%;
     justify-self: center;
     filter: drop-shadow(30px 30px 30px rgba(0, 0, 0, 0.7));
 }
@@ -26,7 +26,7 @@ body {
 h1 {
     line-height: 110px;
     letter-spacing: 2px;
-    margin-top: 70px;
+    margin-top: 0px;
     font-size: 80px;
     font-family: Marker Felt, fantasy;
     margin-bottom: 20px;
@@ -43,7 +43,7 @@ p {
     margin-bottom: 50px;
 }
 header {
-    height: 100px;
+    height: 90px;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr ;
 }
@@ -58,7 +58,14 @@ nav {
 }
 
 .headline-container {
-    height: 100%;
+    justify-self: center;
+    width: 650px;
+    height: 80%;
+}
+
+.image-container {
+    height: 80%;
+    align-self: flex-start;
 }
 
 button {
@@ -105,4 +112,14 @@ nav > button:hover {
     font-family: Arial, sans-serif;
     font-size: 17px;   
     height: 45px;
+}
+
+.see-menu-Btn:hover {
+    cursor: pointer; 
+    font-size: 18px; 
+}
+
+.order-btn:hover {
+    cursor: pointer;
+    font-size: 18px; 
 }
