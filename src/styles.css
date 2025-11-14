@@ -1,6 +1,6 @@
 body {
     height: 100vh;
-    background-color: #FFFDFE;
+    background-color: #ffe49214;
 }
 
 #content {
@@ -8,27 +8,101 @@ body {
     max-width: 1517px;
     height: 60%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 0.7fr));
     align-items: center;
     justify-content: center;
 }
 
 .food-image {
+    margin-bottom: 0px;
+    margin-right: 150px;
     display: block;
-    
-    width: 800px;
+    height: 700px;
+    width: 700px;
     justify-self: center;
-    filter: drop-shadow(20px 20px 25px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(30px 30px 30px rgba(0, 0, 0, 0.7));
 }
 
 h1 {
-    font-size: 70px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-
+    line-height: 110px;
+    letter-spacing: 2px;
+    margin-top: 70px;
+    font-size: 80px;
+    font-family: Marker Felt, fantasy;
+    margin-bottom: 20px;
+    margin-left: 50px;
 }
 
 p {
-    font-size: 25px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 50px;
+    letter-spacing: 1px;
+    width: 80%;
+    font-size: 22px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: rgb(149, 149, 149);
+    margin-bottom: 50px;
+}
+header {
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr ;
+}
+nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    grid-column: 2 /3;
 }
 
+.headline-container {
+    height: 100%;
+}
+
+button {
+    letter-spacing: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    align-self: center;
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(147, 146, 146);
+    font-family: Arial, sans-serif;
+}
+
+nav > button:hover {
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight:300;
+}
+
+
+
+.see-menu-Btn {
+    letter-spacing: 1px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 17px;    
+    border-radius: 10px;
+    border: 1px #f37f0b solid;
+    margin-left: 25px;
+    color: #f37f0b;
+    height: 45px;
+}
+
+.order-btn {
+    letter-spacing: 1px;
+    margin: 0;
+    margin-left: 50px;
+    background-color: #f37f0b;
+    color: white;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;   
+    height: 45px;
+}
