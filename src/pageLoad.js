@@ -12,7 +12,7 @@ export function pageLoad(){
     const img = document.createElement("img")
     const seeMenuBtn = document.createElement("button")
     const orderBtn = document.createElement("button")
-
+    content.innerHTML = ""
 
 
     leftSideContiner.classList.add("headline-container")
