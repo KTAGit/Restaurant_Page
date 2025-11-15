@@ -88,8 +88,6 @@ nav > button:hover {
     font-weight:300;
 }
 
-
-
 .see-menu-Btn {
     letter-spacing: 1px;
     margin: 0;
@@ -100,6 +98,7 @@ nav > button:hover {
     margin-left: 25px;
     color: #f37f0b;
     height: 45px;
+    font-weight: 700;
 }
 
 .order-btn {
@@ -112,16 +111,20 @@ nav > button:hover {
     font-family: Arial, sans-serif;
     font-size: 17px;   
     height: 45px;
+    font-weight: 700;
 }
 
 .see-menu-Btn:hover {
     cursor: pointer; 
-    font-size: 18px; 
+    box-shadow: 0px 0px 5px #f37f0b;
 }
 
 .order-btn:hover {
     cursor: pointer;
-    font-size: 18px; 
+    background-color: #f37f0b00;
+    color: #f37f0b;
+    border: 1px #f37f0b solid;
+    box-shadow: 0px 0px 5px #f37f0b;
 }
 
 .item-container {
@@ -201,4 +204,24 @@ nav > button:hover {
     color: #f37f0b;
     background-color: #cf6e0000;
     border: solid 2px #f37f0b;
+}
+
+.about-container {
+    display: grid;
+    height: 100%;
+    white-space: pre-line;
+    justify-content: center;
+}
+
+.about-container > p {
+    justify-self: center;
+    margin: 0;
+}
+
+.about-container > h2 {
+    align-self: center;
+    font-family: Arial, sans-serif;
+    justify-self: self-start;
+    margin: 0;
+    color: #f37f0b;
 }
