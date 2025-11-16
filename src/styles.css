@@ -5,10 +5,10 @@ body {
 
 #content {
     justify-self: center;
-    max-width: 1517px;
+    width: 100%;
     height: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 0.7fr));
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
 }
@@ -24,10 +24,11 @@ body {
 }
 
 h1 {
+    width: 100%;
     line-height: 110px;
     letter-spacing: 2px;
     margin-top: 0px;
-    font-size: 80px;
+    font-size: 5rem;
     font-family: Marker Felt, fantasy;
     margin-bottom: 20px;
     margin-left: 50px;
@@ -59,11 +60,12 @@ nav {
 
 .headline-container {
     justify-self: center;
-    width: 650px;
+    width: 100%;
     height: 80%;
 }
 
 .image-container {
+    width: 100%;
     height: 80%;
     align-self: flex-start;
 }
@@ -125,6 +127,15 @@ nav > button:hover {
     color: #f37f0b;
     border: 1px #f37f0b solid;
     box-shadow: 0px 0px 5px #f37f0b;
+}
+
+.menu-container {
+    grid-column: 1 / 3;
+    justify-self: center;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 40px;
 }
 
 .item-container {
@@ -207,6 +218,7 @@ nav > button:hover {
 }
 
 .about-container {
+    grid-column: 1 / 3;
     display: grid;
     height: 100%;
     white-space: pre-line;

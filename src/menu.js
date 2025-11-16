@@ -31,7 +31,7 @@ export function menuPage () {
          "NYC Classic Dog", "Chili Melt Dog", "Avocado Bacon Crunch Dog"
     ]
 
-
+    const menuContainer = document.createElement("div")
     for (let i = 0; i < itemName.length; i++) {
         
         const boxContainer = document.createElement("div")
@@ -42,6 +42,7 @@ export function menuPage () {
         const img = document.createElement("img")
         const addToCartBtn = document.createElement("button")
 
+        menuContainer.classList.add("menu-container")
         boxContainer.classList.add("item-container")
         foodName.classList.add("food-name")
         img.classList.add("item-image")
@@ -64,10 +65,12 @@ export function menuPage () {
         priceRateContainer.appendChild(rate)
         boxContainer.appendChild(priceRateContainer)
         
-        content.appendChild(boxContainer)
+        menuContainer.appendChild(boxContainer)
+        
         console.log(item)
     }
 
+    content.appendChild(menuContainer)
 
 
 
